@@ -39,7 +39,7 @@
     <sequenceFlow id="Flow_09iybsf" name="Да" sourceRef="Gateway_0zxfqv2" targetRef="Activity_0on53j8" />
     <dataStoreReference id="DataStoreReference_1kyy5a2" name="Excel" />
     <dataStoreReference id="DataStoreReference_02twsaa" name="Excel" />
-    <task id="Activity_1kj46k1" name="Подобрать варианты рейсов и гостиниц">
+    <task id="Activity_1kj46k1" name="Подобрать вариант рейса и гостиницы">
       <incoming>Flow_17g5qii</incoming>
       <outgoing>Flow_157hk7m</outgoing>
       <dataOutputAssociation id="DataOutputAssociation_00ahguy">
