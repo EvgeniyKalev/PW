@@ -1,0 +1,56 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+'LAYOUT_WITH_LEGEND()
+
+title Архитектура интеграционных решений 1С управления командировками
+
+' Участники процесса
+Person(1CTripDir, "Руководитель сотрудника", "")
+Person(1CTripEmpl, "Сотрудник", "")
+Person(HRSpec, "Кадровый специалист", "")
+
+' Системы
+System_Boundary(1CTrip, "1C: Система управления командировками") {
+    Container_Boundary(MngOrd, "Управление командировками", ""){
+        Component(Order, "Заяка на командировку","", "")
+    } 
+    Container_Boundary(IntWMS, "Интеграция с системой бронирования", ""){
+        Component(PostOrd, "Обработка исходящих заявок","", "")
+        Component(PutOrd, "Обработка входящих заявок","", "")
+    } 
+}
+
+System_Boundary(BBokimg, "Система управления бронированием") {
+    Container_Boundary(MngBBoking, "Управление бронированием","", ""){
+        Component(BBoking, "Бронирование","", "")
+    } 
+    Container_Boundary(IntBBoking, "Интеграция c системой управления командировками","", ""){
+        Component(PostOrdBBoking, "Обработка входящих заявок на командировку","", "")
+        Component(PutOrdBBoking, "Обработка исходящих заявок на командировку","", "")
+    } 
+
+}
+
+' Внешние системы
+System_Ext(RMQ, "Систем обмена сообщениями (RMQ)")
+
+' Связи
+Rel_D(1CTripDir, MngOrd, "Планирование командировок")
+Rel_D(1CTripEmpl, MngOrd, "Формирование заявки на командировку")
+Rel_U(HRSpec, MngBBoking, "Бронирование командировок")
+Rel_U(HRSpec, MngOrd, "Контроль лимитов")
+
+' Новые связи
+Rel(PostOrd, RMQ, "Заявка на бронирование", "AMQP")
+Rel(RMQ, PostOrdBBoking, "Заявка на бронирование", "AMQP")
+Rel(Order, PostOrd, "Формирование заявки", )
+Rel(PutOrd, Order, "Обновление заявки", )
+Rel(RMQ, PutOrd, "Заявка на бронирование", "AMQP")
+Rel(PutOrdBBoking, RMQ, "Заявка на бронирование", "AMQP")
+Rel(PostOrdBBoking, BBoking, "Формирование бронирования", )
+Rel(BBoking, PutOrdBBoking, "Результат бронирования", )
+
+@enduml
