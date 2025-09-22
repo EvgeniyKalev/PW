@@ -1594,7 +1594,13 @@
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
 			<Catalog>ХранилищеДвоичныхДанных</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Гостиницы</Catalog>
 			<Document>ЗаявкаНаКомандировку</Document>
+			<Document>ПланыКомандировок</Document>
+			<Document>Тест</Document>
 			<Enum>ВариантыВерсионированияОбъектов</Enum>
 			<Enum>ВариантыОчисткиФайлов</Enum>
 			<Enum>ВариантыПубликацииДополнительныхОтчетовИОбработок</Enum>
@@ -1647,6 +1653,7 @@
 			<Enum>ФорматыСохраненияОтчетов</Enum>
 			<Enum>ФорматыХраненияМногостраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
+			<Enum>СтатусыЗаявокНаКомандировку</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>ДлительностьОтложенногоОбновления</Report>
 			<Report>КонтрольРассылкиОтчетов</Report>
@@ -1831,6 +1838,7 @@
 			<InformationRegister>УдалитьНастройкиТранспортаОбменаДанными</InformationRegister>
 			<InformationRegister>УдалитьРезультатыОбменаДанными</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
+			<InformationRegister>СогласованиеКомандировок</InformationRegister>
 			<ChartOfCharacteristicTypes>РазделыДатЗапретаИзменения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>

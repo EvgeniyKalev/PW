@@ -19,9 +19,13 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявкаНаКомандировку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаявокНаКомандировку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СогласованиеКомандировок</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>Справочники</Subsystem>
+			<Subsystem>Документы</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

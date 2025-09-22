@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="2a77811f-e159-4d5d-a20c-44440a60ade8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыЗаявокНаКомандировку" category="Ref">
+				<xr:TypeId>ea0d00ad-94e5-40b1-bdf9-bebba76bbf8d</xr:TypeId>
+				<xr:ValueId>26e2f0a5-0af8-4469-b43b-8af2363e9973</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыЗаявокНаКомандировку" category="Manager">
+				<xr:TypeId>326c517a-eb82-4b03-afa3-32999235b07e</xr:TypeId>
+				<xr:ValueId>669ee395-2cc3-40de-94de-000d1f5206b1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыЗаявокНаКомандировку" category="List">
+				<xr:TypeId>d3b10678-04f2-4df4-9cfc-92d9737d5ca3</xr:TypeId>
+				<xr:ValueId>0e576c2d-f5fb-4637-8a7d-ee255cf7ceb0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыЗаявокНаКомандировку</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы заявок на командировку</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="a9e61194-0e33-4ab7-88c7-c5c3c4e30638">
+				<Properties>
+					<Name>Новая</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bf30a877-ebe4-4486-b1b7-04e07cca48ca">
+				<Properties>
+					<Name>СогласованаСотрудником</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Согласована сотрудником</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="be45aa17-9031-4153-90dc-769877b4bc84">
+				<Properties>
+					<Name>ОтклоненаСотрудником</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонена сотрудником</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="28fadc38-c699-4147-a890-004df26ecc50">
+				<Properties>
+					<Name>СогласованаРуководителем</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Согласована руководителем</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="184afdb4-61e7-4404-8a54-d29e6f5e44b0">
+				<Properties>
+					<Name>ОтклоненаРуководителем</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонена руководителем</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7ddf7c44-c73f-4c09-9e85-7c56e66ae5f2">
+				<Properties>
+					<Name>ПеренесенаРуководителем</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перенесена руководителем</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9cb6bef0-6c0f-49e3-851b-8093f5724771">
+				<Properties>
+					<Name>СогласованаОтделомКадров</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Согласована отделом кадров</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fd7c3593-39b7-4a12-87ae-337bf9b4318b">
+				<Properties>
+					<Name>ОтклоненаОтделомКадров</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонена отделом кадров</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="25e71c32-c4c2-4c06-9cc1-1bf8ab87aa1f">
+				<Properties>
+					<Name>БронированиеПодтверждено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бронирование подтверждено</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d31b0b0d-5aa8-4652-a13e-5fefb1c992c0">
+				<Properties>
+					<Name>БрронированиеОтклонено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Брронирование отклонено</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
